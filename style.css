@@ -67,11 +67,12 @@ a:hover, a:active {
 }
 #background_image {
     background-color: rgba(34, 36, 36, 0.171);
-    text-align: left;
+    text-align: center;
     padding: 70px 30px;
     font-size: larger;
     background-image: url("img/pencils.png");
     background-size: cover;
+    color: ivory;
 }
 li{
     background-color: rgba(34, 36, 36, 0.486) !important;
