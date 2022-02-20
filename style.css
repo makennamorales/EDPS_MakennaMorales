@@ -1,18 +1,69 @@
 *{
     box-sizing: border-box;
     font-family: sans-serif;
-    
 }
-img {
-    width: 300px;
-    height: auto;
-    border-radius: 50%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+
+body{
+    background-color: #FAF0E6;
 }
+
+.grid-content{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, max-content);
+    grid-template-areas: 
+        'r r r r r r'
+        'c c c d d d'
+        'e e e e e e';
+
+}
+
+#row1{grid-area: r;}
+#education-container{grid-area: c;}
+#experience-container{grid-area: d;}
+#Portfolio-container{grid-area: e}
+
+#row1{
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        'a a b b b b';
+}
+
+#image-container{grid-area: a;}
+#info-container{grid-area: b;}
+
+#education-container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, max-content);
+    grid-template-areas: 
+        'f f f'
+        'g i i'
+        'h j j';
+}
+
+#ed-title{grid-area: f;}
+#U-logo-container{grid-area: g;}
+#USU-logo-container{grid-area: h;}
+#U-info{grid-area: i;}
+#USU-info{grid-area: j;}
+
+#experience-container{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, max-content);
+    grid-template-areas: 
+        'k'
+        'l';
+}
+
+#experience-title{ grid-area: k;}
+#experience-info{grid-area: l;}
+
 .navigation, a {
     list-style-type: none;
     margin: 0;
@@ -20,12 +71,19 @@ img {
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
-    display: block;
-    
+    background-color: cadetblue !important;   
+    border-radius: 15px; 
 }
 
+#sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+
 #link {
-   display: block;
+  
    padding: 10px;
    background-color: cadetblue !important;
    float: left;
@@ -50,35 +108,86 @@ a:hover, a:active {
 
 }
 
-#sec_lan {
-    padding: 10px auto;
-    text-align: center;
+.image-container{
+    padding: 60px 20px 60px 20px;
+    justify-items: center;
+    align-self: center;
+    
 }
-#about_me{
+
+.makenna {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+
+.info-container{
+    padding: 60px 20px 60px 20px;
+    justify-items: center;
+    align-self: center;
+    color: #FAF0E6;
+}
+
+#row1{
+    background-color: #003153 !important;
+    margin: 70px 10px 70px 10px;
+    border-radius: 50px;
+}
+
+.ed-title{
+    text-align:center;
+}
+
+.USU-img{
+    max-width: 125px;
+    max-height: 125px;
+}
+
+.U-img{
+    height:100px;
+    width: auto;
+}
+
+.education-container{
+    border-radius: 15px;
+}
+
+.education-info{
+    padding: 20px 20px 20px 20px;
+    justify-items: center;
+    align-self: center;
+}
+
+
+.logo-container{
+    padding: 20px 20px 20px 20px;
+    justify-items: center;
+    align-self: center;
+}
+
+.experience-container{
+    background-color: #F55D3E;
+    border-radius: 15px;
+    color: white;
+}
+.experience-title{
     text-align: center;
 }
 
-#education{
-    text-align: center;
+.experience-info{
+    padding: 20px 20px 20px 20px;
+    justify-items: center;
+    align-self: center;
 }
 
- #experience {
-    text-align: center;
-}
-#background_image {
-    background-color: rgba(34, 36, 36, 0.171);
-    text-align: center;
+
+ul {
+    text-align: left;
     padding: 70px 30px;
     font-size: larger;
-    background-image: url("img/pencils.png");
-    background-size: cover;
-    color: ivory;
-   
-}
-li{
-    background-color: rgba(34, 36, 36, 0.486) !important;
-    list-style-type: none;
-    padding-top: 10px;
-    color: ivory;
-    text-align: center;
 }
