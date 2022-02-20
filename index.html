@@ -8,53 +8,68 @@
   </head>
   <body>
     <!--navigation bar begins-->
-  <nav class='navigation'>
-        <a id='link' href='#about_me'>About Me</a>
-        <a id='link' href='#experience'>Experience</a>
-        <a id='link' href='#education'>Education</a>
-        <a id='link' href='https://moralesinstructionaldesign.weebly.com/' target='_blank'>Portfolio</a>
-        <a id='link' href='./Contact_Me.html' target='_blank'>Contact Me</a></li>
-        <!--navigation bar ends-->
-    </nav>
-<!--Basic information and skills-->
-  <div id='sec_lan'>
-    <h1>Makenna Morales</h1>
-    <h2>Instructional Design Student at University of Utah</h2>
-    <h3 id='specialties'>EdTech | Needs Analysis | eLearning | Assessment Design</h3>
-    <p id='tagline'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt <br> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <br> ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-    <img src='./img/makenna.png' alt='Makenna Morales photo' />
-  </div>
-  <!--Basic information and skills ends-->
- 
-  
+    <div class="navigation" id="sticky">
+      <nav class='navigation'>
+          <a id='link' href='#experience-container'>Experience</a>
+          <a id='link' href='#education-container'>Education</a>
+          <a id='link' href='https://moralesinstructionaldesign.weebly.com/' target='_blank'>Portfolio</a>
+          <a id='link' href='./Contact_Me.html' target='_blank'>Contact Me</a></li>
+      </nav>
+    </div><!--navigation bar ends-->
+    <!--Basic information and skills-->
+    <div class="grid-content">
+      <div id="row1">
+        <div id="image-container" class="image-container"><img src='./img/makenna.png' class='makenna' alt='Makenna Morales photo' />
+        </div>
+          <div id="info-container" class="info-container">
+            <h1>Makenna Morales</h1>
+            <h2>Instructional Design Student at University of Utah</h2>
+            <h3 class='specialties'>EdTech | Needs Analysis | eLearning | Assessment Design</h3>
+            <p class='tagline'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt <br> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <br> ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+          </div>
+      </div>
+      <!--Basic information and skills ends-->
+    
+      <!--Education begins-->
+      <div id="education-container" class="education-container">
+        <div id="ed-title" class="ed-title">
+          <h2>Education</h2>
+        </div>
+        <div id="U-logo-container" class="logo-container">
+          <img src="./img/BlockU.png" alt="University of Utah Logo" class="U-img"/>
+        </div>
+        <div id="USU-logo-container" class="logo-container">
+          <img src="./img/USU.png" alt="'Utah State University Logo" class="USU-img"/>
+        </div>
+        <div id="U-info" class="education-info">
+          <h3 class='unbold'>University of Utah | May 2023<br>M.Ed Instructional Design and Educational Technology</h3>
+        </div>
+        <div id="USU-info" class="education-info">
+          <h3 class='unbold'>Utah State University | May 2020 <br> B.A Elementary Education <br> Spanish Minor</h3>
+        </div>
+      </div>
+      <!--Education ends-->
 
-   <!--About Me section begins-->
-  <div>
-    <h2 id='about_me'> About Me</h2>
-     <!--About Me section ends-->
-  </div>
-    <!--Education begins-->
-  <div>
-    <h2 id='education'>Education</h2>
-      <h3 class='unbold'>University of Utah | May 2023<br>M.Ed Instructional Design and Educational Technology</h3>
-      <h3 class='unbold'>Utah State University | May 2020 <br> B.A Elementary Education <br> Spanish Minor</h3>
-  <!--Education begins-->
+      <!--Experience begins-->
+      <div id="experience-container" class="experience-container">
+        <div id="experience-title" class="experience-title">
+          <h2>Experience</h2>
+        </div>
+        <div id="experience-info" class="experience-info">
+            <h3>Elementary Teacher <br> Daybreak Elementary</h3>
+            <p>August 2020-January 2022</p>
+            <ul>
+              <li>Created and presented instruction on EdTeach programs to faculty members</li>
+              <li>Facilitated discussions with stakeholders </li>
+              <li>Performed needs analysis and learner analysis to inform instructional design</li>
+              <li>Organized and created eLearning modules using Canvas</li>
+              <li>Designed formative and summative evaluations</li> 
+              <li>Created multimedia presentations using Canva, Lucidpress, and Microsoft Office</li>
+              <li>Partnered with Subject Matter Experts to create engaging, effective, in-person <br> and online instruction using the ADDIE model</li>
+            </ul>
+        </div>
+        <!--Experience ends-->
+      </div>
   </div>
 </body>
 </html>
- <!--Experience begins-->
- <div>
-  <h2 id='experience'>Experience</h2>
-    <h3 id='experience'>Elementary Teacher <br> Daybreak Elementary</h3>
-    <p id='experience'>August 2020-January 2022</p>
-    <ul id="background_image">
-      <li>Created and presented instruction on EdTeach programs to faculty members</li>
-      <li>Facilitated discussions with stakeholders </li>
-      <li>Performed needs analysis and learner analysis to inform instructional design</li>
-      <li>Organized and created eLearning modules using Canvas</li>
-      <li>Designed formative and summative evaluations</li> 
-      <li>Created multimedia presentations using Canva, Lucidpress, and Microsoft Office</li>
-      <li>Partnered with Subject Matter Experts to create engaging, effective, in-person <br> and online instruction using the ADDIE model</li>
-    </ul>
-  <!--Experience ends-->
-</div>
