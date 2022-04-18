@@ -1,0 +1,36 @@
+.name {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+
+.cookie-border{
+    display: flex;
+    justify-content: center;
+    max-height: 50px;
+    overflow: hidden;
+}
+
+ img{
+     max-height: 50px;
+     padding: 1px;
+     animation: spin 5s infinite;
+ }
+
+ @keyframes spin {
+     0%{transform: rotate(-360deg);}
+
+ }
+
+
+h2{
+    text-align: center;
+}
+
+a:hover{
+    color: white;
+    background-color: black;
+
+}
+
